@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Анкета посетителя ресторна</h1>
+
+    <form action="https://www.google.com/search" method="GET">
+
+        <h3>Контактная информация</h3>
+
+        <div>
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="q" pattern="^[А-Яа-яЁё\s]+$+^[a-zA-Z]">
+        </div>
+
+        <div>
+            <label for="phone">Phone</label><br>
+            <input type="tel" id="phone" name="phone" pattern="\+?[0-9\s\-\(\)]+">
+        </div>
+
+        <div>
+            <label for="email">Email</label><br>
+            <input type="mail" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}">
+        </div>
+
+        <div>
+            <label for="data">Дата посещения</label><br>
+            <input type="date" id="data" name="data">
+        </div>
+
+        <h3>Персональная информация</h3>
+
+        <div>
+            <label for="vozr">Возраст</label><br>
+            <input type="number" id="vozr" name="vozr">
+        </div>
+
+        <div>
+            <label for="kuh">Любимая кухня</label><br>
+            <select id="kuh" name="kuh">
+                <option>Русская</option>
+                <option>Европейская</option>
+                <option>Азиатская</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="many">many text</label><br>
+            <textarea rows="5" cols="20" type="text" id="many" name="many"></textarea>
+        </div>
+
+        <ul>
+            <li> <input type="checkbox" id="nedal" name="nedal"> Недалеко от работы</li>
+            <ol>
+                <li>Первое</li>
+                <li>Второе</li>
+                <li>Третье</li>
+            </ol>
+            <li> <input type="checkbox" id="rekl" name="rekl">Реклама</li>
+            <li> <input type="checkbox" id="posov" name="posov">Посоветовали</li>
+        </ul>
+
+        <div>
+            <br> <input type="reset"> <button>Submit</button>
+        </div>
+
+    </form>
+ 
+</body>
+</html>
